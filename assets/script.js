@@ -25,6 +25,10 @@ const arrowRight=document.querySelector(".arrow_right");
 //Points
 const dot=document.querySelector(".dot");
 
+// let i = 0
+// while("slide"){
+// 	i++
+// };
 // arrow_left.addEventListener("click", function(){
 // 	console.log("Barva")
 // })
