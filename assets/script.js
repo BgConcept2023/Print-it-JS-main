@@ -20,18 +20,37 @@ const slides = [
 //Images
 const bannerImg = document.querySelector('.banner-img');
 //Flèches
-const arrow_left=document.querySelector(".arrow_left");
+const arrowLeft=document.querySelector(".arrow_left");
 const arrowRight=document.querySelector(".arrow_right");
 //Points
 const dot=document.querySelector(".dot");
 
-// let i = 0
-// while("slide"){
-// 	i++
-// };
-// arrow_left.addEventListener("click", function(){
-// 	console.log("Barva")
-// })
+// boucle for
+for (let index =0; index < slides.length; index++){
+	console.log(slides[index])
+}
+slides.forEach(slide => {
+	console.log(slide);
+})
 
+let position = 0;
+
+
+arrowLeft.addEventListener("click", function(){
+	position --;
+	if(position < 0){
+		position = slides.length - 1;
+	}
+	console.log(slides[position])
+
+})
+
+arrowRight.addEventListener("click", function(){
+	position ++;
+	if(position >= slides.length){
+		position = 0;
+	}
+	console.log(slides[position])
+})
 
 
