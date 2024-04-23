@@ -63,24 +63,35 @@ slides.forEach(slide => {
 
 
 //FLECHE GAUCHE
-// arrowLeft.addEventListener("click", () => {
-// 	position--;
+arrowLeft.addEventListener("click", () => {
+	position--;
 
-// 	if (position < 0) {
-// 		position = slides.length - 1;
-// 	}
+	if (position < 0) {
+		position = slides.length - 1;
+	}
 
-
-// })
+		console.log(slides[position])
+})
 
  //FLECHE DROITE
- function clickRight(){
-	 arrowRight.addEventListener("click", () => {
-		 position++;
-		 image.src = slides[currentIndex].imageSrc;
-		 
-		});
+
+
+ arrowRight.addEventListener("click", ()=>{
+	position ++;
+	if(position >= slides.length){
+		position = 0;
 	}
-clickRight();
+	console.log(slides[position])
+})
+
+//Essais fleche droite
+//  function clickRight(){
+// 	 arrowRight.addEventListener("click", () => {
+// 		 position++;
+// 		 image.src = slides[currentIndex].imageSrc;
+		 
+// 		});
+// 	}
+// clickRight();
 
 
