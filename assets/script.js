@@ -24,7 +24,7 @@ console.log(slides);
 const bannerImg = document.querySelector(".banner-img");
 console.log("banner-img");
 //TagLine
-const tagLine = document.querySelector(["tagLine"])
+const tagLine = document.querySelector("#banner p")
 //Flèches
 const arrowLeft = document.querySelector(".arrow_left");
 const arrowRight = document.querySelector(".arrow_right");
@@ -66,6 +66,7 @@ arrowLeft.addEventListener("click", () => {
 		position = slides.length - 1;
 	}
 	udapteDot();
+	updateSlide();
 		console.log(slides[position])
 })
 
@@ -84,8 +85,11 @@ arrowLeft.addEventListener("click", () => {
 
 //Essais fleche droite pour le slide
 function updateSlide(){
-	bannerImg.src = path+slides[position].image;
+	const currentSlide = slides[position]; 
+	bannerImg.src = path+currentSlide.image;
 	
+	tagLine.innerHTML = currentSlide.tagLine;
+
 }
 
 
