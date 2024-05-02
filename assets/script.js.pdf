@@ -18,7 +18,7 @@ const slides = [
 ]
 console.log(slides);
 
-//selction des differents élements
+//selction des differents elements
 
 //Images
 const bannerImg = document.querySelector(".banner-img");
@@ -30,9 +30,11 @@ const arrowLeft = document.querySelector(".arrow_left");
 const arrowRight = document.querySelector(".arrow_right");
 console.log("arrowLeft");
 console.log("arrowRight");
+
 //Dots
 let dots = document.querySelector(".dots");
 let dotSelected = document.querySelector(".dot_selected");
+
 // index actuel de la position span
 let position = 0;
 
@@ -82,12 +84,12 @@ arrowLeft.addEventListener("click", () => {
 
 //Essais fleche droite
 //  function clickRight(){
-//  	 arrowRight.addEventListener("click", () => {
-//  		 position++;
-//  		 image.src = slides[currentIndex].imageSrc;
+// 	 arrowRight.addEventListener("click", () => {
+// 		 position++;
+// 		 image.src = slides[currentIndex].imageSrc;
 		 
-//  		});
-//  	}
-//  clickRight();
+// 		});
+// 	}
+// clickRight();
 
 
