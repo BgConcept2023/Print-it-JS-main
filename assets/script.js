@@ -36,6 +36,7 @@ let dotSelected = document.querySelector(".dot_selected");
 // index actuel de la position span
 let position = 0;
 
+const path = "../assets/images/slideshow/";
 /*Côté animation*/
 // boucle for
 for (let index = 0; index < slides.length; index++) {
@@ -77,17 +78,14 @@ arrowLeft.addEventListener("click", () => {
 		position = 0;
 	}
 	udapteDot();
+	updateSlide();
 	console.log(slides[position])
-})
+});
 
-//Essais fleche droite
-//  function clickRight(){
-//  	 arrowRight.addEventListener("click", () => {
-//  		 position++;
-//  		 image.src = slides[currentIndex].imageSrc;
-		 
-//  		});
-//  	}
-//  clickRight();
+//Essais fleche droite pour le slide
+function updateSlide(){
+	bannerImg.src = path+slides[position].image;
+	
+}
 
 
