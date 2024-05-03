@@ -36,7 +36,8 @@ let dotSelected = document.querySelector(".dot_selected");
 // index actuel de la position span
 let position = 0;
 
-const path = "../assets/images/slideshow/";
+const path = "./assets/images/slideshow/";
+
 /*Côté animation*/
 // boucle for
 for (let index = 0; index < slides.length; index++) {
