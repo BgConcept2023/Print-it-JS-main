@@ -25,17 +25,22 @@ const bannerImg = document.querySelector(".banner-img");
 console.log("banner-img");
 //TagLine
 const tagLine = document.querySelector("#banner p")
+
 //Flèches
 const arrowLeft = document.querySelector(".arrow_left");
 const arrowRight = document.querySelector(".arrow_right");
+
 console.log("arrowLeft");
 console.log("arrowRight");
+
 //Dots
 let dots = document.querySelector(".dots");
 let dotSelected = document.querySelector(".dot_selected");
-// index actuel de la position span
+
+// index actuel de la position.
 let position = 0;
 
+//Chemin concernant les images.
 const path = "./assets/images/slideshow/";
 
 /*Côté animation*/
@@ -84,7 +89,7 @@ arrowLeft.addEventListener("click", () => {
 	console.log(slides[position])
 });
 
-//Essais fleche droite pour le slide
+//Déclaration de la fonction pour le slide
 function updateSlide(){
 	const currentSlide = slides[position]; 
 	bannerImg.src = path+currentSlide.image;
